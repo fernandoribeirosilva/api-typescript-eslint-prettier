@@ -28,6 +28,13 @@ class CategoriesRepository {
   list(): Category[] {
     return this.categories;
   }
+
+  fidByName(name: string): Category | undefined {
+    const categoryAlreadyExist = this.categories.find((category) => category.name === name);
+    console.log(categoryAlreadyExist);
+
+    return categoryAlreadyExist;
+  }
 }
 
 export { CategoriesRepository }
