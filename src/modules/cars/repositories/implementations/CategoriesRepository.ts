@@ -1,5 +1,8 @@
 import { Category } from "../../model/Category";
-import { ICategoriesRepository, ICreateCategoryDTO } from "../ICategoriesRepository";
+import {
+  ICategoriesRepository,
+  ICreateCategoryDTO,
+} from "../ICategoriesRepository";
 
 class CategoriesRepository implements ICategoriesRepository {
   private categories: Category[];
@@ -33,10 +36,12 @@ class CategoriesRepository implements ICategoriesRepository {
   }
 
   findByName(name: string): Category | null {
-    const categoryAlreadyExist = this.categories.find((category) => category.name === name);
+    const categoryAlreadyExist = this.categories.find(
+      (category) => category.name === name
+    );
 
     return null;
   }
 }
 
-export { CategoriesRepository }
+export { CategoriesRepository };

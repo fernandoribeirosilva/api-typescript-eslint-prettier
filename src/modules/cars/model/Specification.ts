@@ -1,5 +1,3 @@
-
-
 import { v4 as uuidV4 } from "uuid";
 
 class Specification {
@@ -15,4 +13,4 @@ class Specification {
   }
 }
 
-export { Specification }
+export { Specification };
